@@ -18,29 +18,29 @@ int main() {
   int sum, sumSquare, sumCube;
 
   cout << "Введите элементы массива:" << endl;
-  for (int index = 0; index < numberCount; index++) {
+  for (int index = 0; index < numberCount; ++index) {
     cout << "D[" << index << "] = ";
     cin >> numberList[index];
   }
 
   cout << "Массив: ";
-  for (int index = 0; index < numberCount; index++) {
+  for (int index = 0; index < numberCount; ++index) {
     cout << numberList[index] << " ";
   }
   cout << endl;
 
   sum = 0;
-  for (int index = 0; index < numberCount; index++) {
+  for (int index = 0; index < numberCount; ++index) {
     sum = sum + numberList[index];
   }
 
   sumSquare = 0;
-  for (int index = 0; index < numberCount; index++) {
+  for (int index = 0; index < numberCount; ++index) {
     sumSquare = sumSquare + pow(numberList[index], 2);
   }
 
   sumCube = 0;
-  for (int index = 0; index < numberCount; index++) {
+  for (int index = 0; index < numberCount; ++index) {
     sumCube = sumCube + pow(numberList[index], 3);
   }
 
