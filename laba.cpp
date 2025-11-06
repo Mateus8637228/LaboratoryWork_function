@@ -60,16 +60,13 @@ int main() {
     ++inputCounter;
   }
 
-  cout << "Массив: ";
-  printArray(numbers, arraySize);
-
   sum = calculateSum(numbers, arraySize);
   calculateSumOfSquares(numbers, arraySize, sumOfSquares);
   calculateSumOfCubes(numbers, arraySize, sumOfCubes);
 
-  cout << "Сумма элементов = " << sum << endl;
-  cout << "Сумма квадратов = " << sumOfSquares << endl;
-  cout << "Сумма кубов = " << sumOfCubes << endl;
+  cout << "Массив: ";
+  printArray(numbers, arraySize);
+  cout << "Сумма элементов = " << sum << endl << "Сумма квадратов = " << sumOfSquares << endl << "Сумма кубов = " << sumOfCubes << endl;
 
   return initialValue;
 }
